@@ -1,0 +1,210 @@
+{
+  "resources": [
+    {
+      "path": "data.csv",
+      "name": "data",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "AGE",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "under 5 years old"
+              ]
+            },
+            "title": "Age"
+          },
+          {
+            "name": "FREQ",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Annual"
+              ]
+            },
+            "title": "Frequency of observation"
+          },
+          {
+            "name": "NATURE",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Not Available"
+              ]
+            },
+            "title": "Nature of data points"
+          },
+          {
+            "name": "OBS_STATUS",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Normal value"
+              ]
+            },
+            "title": "Observation status"
+          },
+          {
+            "name": "REF_AREA",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Ha Noi",
+                "Ha Giang",
+                "Cao Bang",
+                "Bac Kan",
+                "Tuyen Quang",
+                "Lao Cai",
+                "Dien Bien",
+                "Lai Chau",
+                "Son La",
+                "Yen Bai",
+                "Hoa Binh",
+                "Thai  Nguyen",
+                "Lang Son",
+                "Quang Ninh",
+                "Bac Giang",
+                "Phu Tho",
+                "Vinh Phuc",
+                "Bac Ninh",
+                "Hai Duong",
+                "Hai Phong",
+                "Hung Yen",
+                "Thai Binh",
+                "Ha Nam",
+                "Nam Dinh",
+                "Ninh Binh",
+                "Thanh Hoa",
+                "Nghe An",
+                "Ha Tinh",
+                "Quang Binh",
+                "Quang Tri",
+                "Thua Thien-Hue",
+                "Da Nang",
+                "Quang  Nam",
+                "Quang  Ngai",
+                "Binh Dinh",
+                "Phu Yen",
+                "Khanh  Hoa",
+                "Ninh  Thuan",
+                "Binh Thuan",
+                "Kon Tum",
+                "Gia Lai",
+                "Dak Lak",
+                "Dak Nong",
+                "Lam Dong",
+                "Binh Phuoc",
+                "Tay Ninh",
+                "Binh  Duong",
+                "Dong Nai",
+                "Ba Ria - Vung Tau",
+                "Ho Chi Minh city",
+                "Long An",
+                "Tien Giang",
+                "Ben Tre",
+                "Tra Vinh",
+                "Vinh Long",
+                "Dong Thap",
+                "An Giang",
+                "Kien  Giang",
+                "Can Tho",
+                "Hau Giang",
+                "Soc Trang",
+                "Bac Lieu",
+                "Ca Mau",
+                "Viet Nam",
+                "Red River Delta",
+                "Northern midlands and mountain areas",
+                "Northern Central area and Central coastal area",
+                "Central Highlands",
+                "South East",
+                "Mekong River Delta"
+              ]
+            },
+            "title": "Reference area"
+          },
+          {
+            "name": "REPORTING_TYPE",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "National"
+              ]
+            },
+            "title": "Reporting type"
+          },
+          {
+            "name": "SERIES",
+            "type": "string",
+            "title": "SDG Series"
+          },
+          {
+            "name": "SEX",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Female",
+                "Male"
+              ]
+            },
+            "title": "Sex"
+          },
+          {
+            "name": "UNIT_MEASURE",
+            "type": "string",
+            "title": "Unit of measure"
+          },
+          {
+            "name": "UNIT_MULT",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Units"
+              ]
+            },
+            "title": "Unit multiplier"
+          },
+          {
+            "name": "URBANISATION",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Rural",
+                "Urban"
+              ]
+            },
+            "title": "Degree of urbanisation"
+          },
+          {
+            "name": "Value",
+            "type": "string",
+            "title": "Value"
+          },
+          {
+            "name": "Year",
+            "type": "string",
+            "title": "Year"
+          }
+        ]
+      }
+    }
+  ],
+  "profile": "data-package",
+  "name": "2-2-1",
+  "title": "Prevalence of stunting (height for age <-2 standard deviation from the median of the World Health Organization (WHO) Child Growth Standards) among children under 5 years of age"
+}
