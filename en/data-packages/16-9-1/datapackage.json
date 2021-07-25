@@ -60,13 +60,7 @@
             "constraints": {
               "enum": [
                 "",
-                "Viet Nam",
-                "Red River Delta",
-                "Northern midlands and mountain areas",
-                "Northern Central area and Central coastal area",
-                "Central Highlands",
-                "South East",
-                "Mekong River Delta"
+                "Viet Nam"
               ]
             },
             "title": "Reference area"
