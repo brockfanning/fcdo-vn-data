@@ -1,0 +1,238 @@
+# Prose configuration
+prose:
+  ignore: ['/scripts']
+  metadata:
+    meta:
+    ############ Page Data ############
+      - name: "title"
+        field:
+            element: text
+            label: "Page Title"
+            scope: page
+      - name: "sdg_goal"
+        field:
+            element: hidden
+            label: "SDG Goal"
+            scope: page
+      - name: "permalink"
+        field:
+            element: hidden
+            label: "Permalink"
+            scope: page
+      - name: "layout"
+        field:
+            element: hidden
+            label: "Layout"
+            scope: page
+      ######### Indicator information #########
+      - name: "indicator_name1"
+        field:
+            element: text
+            label: "Indicator"
+            translation_key: metadata_fields.indicator_name
+            scope: indicator_information
+      - name: "target_name"
+        field:
+            element: text
+            label: "Target"
+            translation_key: metadata_fields.target
+            scope: indicator_information
+      - name: "goal_name"
+        field:
+            element: text
+            label: "Goal"
+            translation_key: custom.goal
+            scope: indicator_information
+      ######### National Metadata #########
+      - name: "national_geographical_coverage"
+        field:
+            element: text
+            label: "Geographical coverage"
+            scope: national
+      - name: "measurement_units"
+        field:
+            element: text
+            label: "Unit of measurement"
+            translation_key: metadata_fields.computation_units
+            scope: national
+      - name: "definitions"
+        field:
+            element: textarea
+            label: "Definitions"
+            translation_key: metadata_fields.computation_definitions
+            scope: national
+      - name: "concepts"
+        field:
+            element: textarea
+            label: "Concepts"
+            translation_key: custom.concepts
+            scope: national
+      - name: "rationale_interpretation"
+        field:
+            element: textarea
+            label: "Rationale and interpretation"
+            translation_key: custom.rationale_and_interpretation
+            scope: national 
+      - name: "computation_methods"
+        field:
+            element: text
+            label: "Method of computation"
+            translation_key: custom.method_of_computation
+            scope: national
+      - name: "comments_limitations"
+        field:
+            element: text
+            label: "Comments and limitations"
+            translation_key: custom.comments_and_limitations
+            scope: national
+      - name: "quality_assurance"
+        field:
+            element: text
+            label: "Quality assurance"
+            translation_key: custom.quality_assurance
+            scope: national
+      - name: "data_availability_gaps"
+        field:
+            element: text
+            label: "Data availability and gaps"
+            translation_key: custom.data_availability_and_gaps
+            scope: national
+      - name: "disaggregation"
+        field:
+            element: text
+            label: "Disaggregation"
+            translation_key: custom.disaggregation
+            scope: national
+      - name: "international_comparability"
+        field:
+            element: text
+            label: "Comparability with international data/standards"
+            translation_key: custom.comparability_with_international_data_standards
+            scope: national
+      - name: "references_documentation"
+        field:
+            element: text
+            label: "References and documentation"
+            translation_key: custom.references_and_documentation
+            scope: national
+      - name: "data_sources"
+        field:
+            element: text
+            label: "Data sources"
+            translation_key: custom.data_sources
+            scope: national
+      - name: "data_collection"
+        field:
+            element: text
+            label: "Data collection methods"
+            translation_key: custom.data_collection_methods
+            scope: national
+      - name: "goal_meta_link"
+        field:
+            element: text
+            label: "Link to UN metadata"
+            scope: national
+      - name: "goal_meta_link_text"
+        field:
+            element: text
+            label: "Link to UN metadata text"
+            value: "UN metadata"
+            scope: national
+       ######### Data reporter info #########
+      - name: "organization_name"
+        field:
+            element: text
+            label: "Organization"
+            translation_key: custom.organization
+            scope: data_reporter
+      - name: "contact_name"
+        field:
+            element: text
+            label: "Contact person(s)/focal point"
+            translation_key: custom.contact_person
+            scope: data_reporter
+      - name: "contact_email"
+        field:
+            element: text
+            label: "Contact person's email"
+            translation_key: custom.contact_person_email
+            scope: data_reporter
+      - name: "contact_phone"
+        field:
+            element: text
+            label: "Contact person's phone"
+            translation_key: custom.contact_person_phone
+            scope: data_reporter
+      - name: "organization_website"
+        field:
+            element: text
+            label: "Organization website"
+            translation_key: custom.organization_website
+            scope: data_reporter
+       ######### Data Info #########
+      - name: "reporting_status"
+        field:
+            element: select
+            label: "Reporting status"
+            options:
+              - name: 'complete'
+                value: 'complete'
+                translation_key: 'status.reported_online'
+              - name: 'inprogress'
+                value: 'inprogress'
+                translation_key: 'status.statistics_in_progress'
+              - name: 'notstarted'
+                value: 'notstarted'
+                translation_key: 'status.not_reported'
+              - name: 'notapplicable'
+                value: 'notapplicable'
+                translation_key: 'status.not_applicable'
+            scope: data
+      - name: data_non_statistical
+        field:
+            element: checkbox
+            label: Non-statistical indicator
+            help: Check this box if this indicator does not have numeric data associated with it
+            value: false
+            scope: data
+      - name: data_footnote
+        field:
+            element: text
+            label: Footnote
+            help: Footnotes appear under the chart and by data tables
+            scope: data
+      - name: data_geocode_regex
+        field:
+            element: text
+            label: GeoCode Regular Expression
+            help: A regex on which geocodes to include
+            scope: data
+      - name: data_keywords
+        field:
+            element: text
+            label: Search Keywords
+            help: Comma separated keywords for search page
+            scope: data
+      - name: data_show_map
+        field:
+            element: checkbox
+            label: Show the map when GeoCodes are present?
+            help: If this box is checked then the prescence of a GeoCode field will trigger a map
+            value: false
+            scope: data      
+      ######### Chart Info #########
+      - name: "graph_type"
+        field:
+            element: select
+            label: "Graph type"
+            options:
+              - name: 'line'
+                value: 'line'
+              - name: 'bar'
+                value: 'bar'
+            scope: graph
+      - name: "graph_title"
+        field:
+            element: text
+            label: "Graph Title"
+            scope: graph
